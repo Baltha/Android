@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey"
+    tools:context="com.example.movieproject.app.MainActivity">
+    <include android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+    <ListView
+        android:id="@+id/toplist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/header"
+        android:listSelector="@drawable/list_selector_flatcolor" />
+</RelativeLayout>

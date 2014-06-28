@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <include android:id="@+id/header"
+        layout="@layout/header_add"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTitle"
+        android:autoText="false"
+        android:hint="Titre"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="97dp" />
+
+    <EditText
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextReal"
+        android:hint="Réalisateur"
+        android:layout_alignBaseline="@+id/editTextAnnee"
+        android:layout_alignBottom="@+id/editTextAnnee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editTextAnnee" />
+
+    <EditText
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAnnee"
+        android:hint="Année"
+        android:layout_gravity="right"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextActeur"
+        android:hint="Acteur principal"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editTextReal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUrl"
+        android:hint="Url de l'affiche"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editTextActeur"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="Ajouter"
+        android:id="@+id/buttonValider"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/checkBoxVu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:background="@color/blue"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vu"
+        android:id="@+id/checkBoxVu"
+        android:layout_marginTop="27dp"
+        android:checked="false"
+        android:layout_below="@+id/editTextUrl"
+        android:layout_alignLeft="@+id/buttonValider"
+        android:layout_alignStart="@+id/buttonValider" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispo"
+        android:id="@+id/checkBoxDispo"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBoxVu"
+        android:layout_alignRight="@+id/buttonValider"
+        android:layout_alignEnd="@+id/buttonValider" />
+
+
+</RelativeLayout>

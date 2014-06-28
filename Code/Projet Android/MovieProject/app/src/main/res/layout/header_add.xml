@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@color/blue"
+    android:gravity="fill_horizontal" >
+
+    <Button android:id="@+id/buttonBack"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:background="@drawable/arrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ajouter un film"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/add"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:background="@color/grey"
+    >
+
+    <ImageView
+        android:id="@+id/thumbImage"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/grey" />
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/thumbImage"
+    android:minHeight="50dp"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="title"
+        android:textSize="20dp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/realisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="5dp"
+        android:text="realisateur"
+        android:textColor="#333333"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="no date"
+        android:textColor="#333333"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/realisateur"
+        android:layout_alignBottom="@+id/realisateur"
+        android:layout_toRightOf="@+id/realisateur"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/visible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/icon_vu_off"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_above="@+id/realisateur"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/dispo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingRight="5dp"
+        android:enabled="false"
+        android:editable="false"
+        android:focusable="false"
+        android:background="@drawable/icon_pret_off"
+        android:focusableInTouchMode="false"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+
+</RelativeLayout>
